@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link	rel="Stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header id="Home">
+      <h1>Personal Portfolio</h1>
+      <nav>
+        <a href="Home">Home</a> |
+        <a href="#featured">About Me</a> |
+        <a href="#content">My Projects</a> |
+        <a href="#presentation">Contact</a> |
+        <a href="#extras">Technologies</a>
+      </nav>
+    </header>
+
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  
+    <section id="featured">
+      <h2>About Me</h2>
+      <p>A third year Commerce student majoring in Business Information Systems and Business Information Technology. Passionate about the development and growth of technological advancement. I try my best in approaching any challenges by striving to complete them with efficiency and diligence. </p>
+    </section>
+  
+    <section id="content">
+      <h2>My Projects</h2>
+
+      <div class="gallery">
+        <div class="project" onclick="openModal(1)">
+          <img src="https://thumb.ac-illust.com/56/56f6f5c8f83cc53bbea93a034d19f05a_t.jpeg" alt="Project 1">
+          <div class="overlay">
+            <div class="text"> Rock Paper Scissors</div>
+            </div>
+        </div>
+        <div class="project" onclick="openModal(2)">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Q3cb0D6QuYQBCEZLPq78KUB3Ah47I7S83vqIv2yquw&s" alt="Project 2">
+          <div class="overlay">
+            <div class="text"> My Personal Website</div>
+            </div>
+          <h3>My Personal Website</h3>
+        </div>
+        <div class="project" onclick="openModal(3)">
+          <img src="https://img.freepik.com/free-photo/researchers-looking-alternative-energy-souces_23-2149311493.jpg" alt="Project 3">
+          <div class="overlay">
+            <div class="text"> Flatland</div>
+            </div>
+          <h3>Flatland</h3>
+        </div>
+      </div>
+    
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImg" src="path/to/placeholder.png" alt="Project Image">
+          <div id="modalContent">
+            <h2 id="modalTitle">Default Title</h2>
+            <p id="modalDescription"></p>
+          </div>
+       </div>
+    </div>
+
+      <div id="descriptions" style="display: none;">
+        <div id="description1">
+          <h3>Description</h3>
+          <p>This is a fun game of Rock Paper and Scissors.</p>
+        </div>
+        <div id="description2">
+          <h3>Description</h3>
+          <p>This is my personal website showcasing my portfolio and projects.</p>
+        </div>
+        <div id="description3">
+          <h3>Description</h3>
+          <p>Flatland is a project focused on minimalist design principles.</p>
+        </div>
+      </div>
+
+      
+      <section id="presentation">
+      <h2 id="Contact">Contact Me</h2>
+      <form action="/submit-your-questions-here" method="post">
+        <label for="name"> Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+  
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="8" required></textarea><br>
+         
+        <input type="submit" value="Submit">
+  
+      </form>
+    </section>
+  </section>
+  
+    <section id="extras">
+      <h2>Web Tech Used</h2>
+      <h3>HTML5</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="60" alt="HTML5 Logo">
+     <p>Image Source: <a href="https://en.wikipedia.org/wiki/HTML5">Wikipedia HTML5 Logo</a> </p>
+      <h3>CSS3</h3>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="50" alt="CSS3 Logo">
+      <p> Image Source: <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg">Wikipedia CSS 3 Logo</a> </p>
+      <h3>Javascript</h3>
+
+      <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png" width="50" alt="Javascript Logo">
+      <p> Image Source: <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia Javascript Logo</a> </p>
+    </section>
+  
+    <footer>
+      <p>Contact me on social platforms</p>
+      <a href="https://www.linkedin.com/school/curtinuniversity/mycompany/verification/" target="_blank">LinkedIn</a> |
+      <a href="https://twitter.com/CurtinUni" target="_blank">Twitter</a> |
+      <a href="https://www.facebook.com/curtinuniversity/" target="_blank">Facebook</a> |
+      <a href="https://www.youtube.com/user/CurtinUniversity" target="_blank">Youtube</a>
+  </footer>
+  </body>
+  
+  </html>
